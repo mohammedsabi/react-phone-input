@@ -481,7 +481,7 @@ class ReactPhoneInput extends React.Component {
     return (
       <div className="react-tel-input">
         <input
-          placeholder="+1 (702) 123-4567"
+          placeholder="Please enter your phone number"
           onChange={this.handleInput}
           onClick={this.handleInputClick}
           onFocus={this.handleInputFocus}
@@ -571,7 +571,7 @@ export default ReactPhoneInput;
 
 if (__DEV__) {
   const ReactDOM = require('react-dom');
-  
+
   ReactDOM.render(
     <ReactPhoneInput defaultCountry={'us'} preferredCountries={['us', 'de']} excludeCountries={'in'}/>,
     document.getElementById('content'));
