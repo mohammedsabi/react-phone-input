@@ -491,6 +491,7 @@ class ReactPhoneInput extends React.Component {
           type="tel"
           className={inputClasses}
         />
+
         <div ref="flagDropDownButton" className={flagViewClasses} onKeyDown={this.handleKeydown} >
           <div
 						ref='selectedFlag'
@@ -501,8 +502,9 @@ class ReactPhoneInput extends React.Component {
               <div className={arrowClasses}></div>
             </div>
           </div>
-          {this.state.showDropDown ? this.getCountryDropDownList() : ''}
+
         </div>
+        {this.state.showDropDown ? this.getCountryDropDownList() : ''}
       </div>
     );
   }
